@@ -5,20 +5,20 @@
 // @namespace      http://efcl.info/
 // @author         azu
 // @description    
-// @include        https?://*
-// @resource       1kb  https://raw.github.com/azu/GM_setValue_with_big_value/master/1kb.dummy
+// @include        http://*
+// @resource       100kb  https://rawgithub.com/azu/GM_setValue_with_big_value/master/100kb.dummy
 // @run-at         document-end
 // ==/UserScript==
 
-var kb_one = GM_getResourceText("1kb");
+var kb_100 = GM_getResourceText("100kb");
 
 var data = "";
 for (var i = 0; i < 10; i++) {
-    data = data + kb_one;
+    data = data + kb_100;
     try {
-        GM_setValue("test", kb_one);
+        GM_setValue("test", data);
     } catch (e) {
-        console.log(e);
+        console.log(i, e);
         throw e;
     }
 }
