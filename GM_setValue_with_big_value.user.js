@@ -5,8 +5,8 @@
 // @namespace      http://efcl.info/
 // @author         azu
 // @description    
-// @include        http*
-// @resource       1kb  https://rawgithub.com/azu/GM_setValue_with_big_value/master/1kb.dummy
+// @include        https?://*
+// @resource       1kb  https://raw.github.com/azu/GM_setValue_with_big_value/master/1kb.dummy
 // @run-at         document-end
 // ==/UserScript==
 
